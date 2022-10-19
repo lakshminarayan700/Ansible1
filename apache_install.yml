@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  gather_facts: true
+  become: yes
+  become_method: sudo
+  become_user: root
+
+  tasks:
+    - name: install
+      package:
+        name: httpd
+        state: present
