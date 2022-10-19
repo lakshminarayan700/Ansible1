@@ -1,7 +1,7 @@
 pipelines:
-    branches:
-        master:
-           -step:
-              name: Just a sample pipeline
-              script:
-                  - echo "Hello world"
+  branches:
+     master:
+       - step:
+          name: Just a sample pipeline
+          script:
+             - echo "Hello World!!!"
